@@ -1,0 +1,258 @@
+[
+{
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "publishedYear": 2008,
+    "genre": "Programming",
+    "price": 34.99,
+    "description": "A handbook of agile software craftsmanship and clean coding practices.",
+    "imageUrl": "https://i.ibb.co.com/SwSk1Bk5/author-1.png",
+    "bookUrl": "https://i.ibb.co.com/rRvSsDQN/clean-coder.jpg"
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "publishedYear": 1988,
+    "genre": "Novel",
+    "price": 15.99,
+    "description": "A philosophical novel about finding one's destiny.",
+    "imageUrl": "https://i.ibb.co.com/mrPzYK8V/author-2.jpg",
+    "bookUrl": "https://i.ibb.co.com/zhR9wtcj/the-Alchiments.jpg"
+  },
+  {
+    "title": "Python Crash Course",
+    "author": "Eric Matthes",
+    "publishedYear": 2019,
+    "genre": "Programming",
+    "price": 29.99,
+    "description": "A fast-paced, project-based introduction to Python programming.",
+    "imageUrl": "https://i.ibb.co.com/sd5phH1w/author-3.png",
+    "bookUrl": "https://i.ibb.co.com/BHjy3kfS/python-crash-corse.jpg"
+  },
+  {
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "publishedYear": 1980,
+    "genre": "Science",
+    "price": 22.99,
+    "description": "Exploring the universe and humanity's place in it.",
+    "imageUrl": "https://i.ibb.co.com/1Fh5c7j/author-4.jpg",
+    "bookUrl": "https://i.ibb.co.com/21nPwmhN/cosmos.jpg"
+  },
+  {
+    "title": "Riyad-us-Saliheen",
+    "author": "Imam An-Nawawi",
+    "publishedYear": 1258,
+    "genre": "Islamic",
+    "price": 18.50,
+    "description": "Collection of hadith covering morals, manners, and worship.",
+    "imageUrl": "https://i.ibb.co.com/b52FW2Ds/author-5.jpg",
+    "bookUrl": "https://i.ibb.co.com/Xx5HdF0B/riyadh-us-saaliheen.png"
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt, David Thomas",
+    "publishedYear": 1999,
+    "genre": "Programming",
+    "price": 31.99,
+    "description": "Your journey to mastery in software development.",
+    "imageUrl": "https://i.ibb.co.com/6cWy6xt4/author-6.jpg",
+    "bookUrl": "https://i.ibb.co.com/rCV88wB/the-pragmatic-programmer.jpg"
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "publishedYear": 1997,
+    "genre": "Fiction",
+    "price": 15.99,
+    "description": "The first book in the beloved Harry Potter fantasy series.",
+    "imageUrl": "https://i.ibb.co.com/PG8Ly8hW/author-7.jpg",
+    "bookUrl": "https://i.ibb.co.com/FqmzNS1s/harry-potter.jpg"
+  },
+  {
+    "title": "Introduction to Algorithms",
+    "author": "Cormen, Leiserson, Rivest, Stein",
+    "publishedYear": 2009,
+    "genre": "Programming",
+    "price": 59.99,
+    "description": "A comprehensive textbook on algorithms with detailed explanations.",
+    "imageUrl": "https://i.ibb.co.com/wNBjVVNf/author-8.jpg",
+    "bookUrl": "https://i.ibb.co.com/vCGDqZr2/Algorithm.jpg"
+  },
+  {
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "publishedYear": 1988,
+    "genre": "Science",
+    "price": 20.00,
+    "description": "An accessible introduction to cosmology and the universe.",
+    "imageUrl": "https://i.ibb.co.com/BHmtPtgj/author-9.jpg",
+    "bookUrl": "https://i.ibb.co.com/x88gHJcM/A-brife-history-of-time.jpg"
+  },
+  {
+    "title": "Stories from 1001 Nights",
+    "author": "Anonymous",
+    "publishedYear": 1706,
+    "genre": "Classic Stories",
+    "price": 14.50,
+    "description": "A collection of Middle Eastern folktales from the famous Arabian Nights.",
+    "imageUrl": "  https://i.ibb.co.com/zhsBkMJq/author-10.jpg",
+    "bookUrl": "https://i.ibb.co.com/s7vyG60/1001-nights.jpg"
+  },
+  {
+    "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+    "author": "Gamma, Helm, Johnson, Vlissides",
+    "publishedYear": 1994,
+    "genre": "Programming",
+    "price": 44.99,
+    "description": "Classic book on software design patterns and reusable object-oriented solutions.",
+    "imageUrl": "https://i.ibb.co.com/whGXXBZQ/author-11.gif",
+    "bookUrl": "https://i.ibb.co.com/3ySwPBG0/design-patters.jpg"
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "publishedYear": 1813,
+    "genre": "Classic Literature",
+    "price": 12.99,
+    "description": "A romantic novel about manners, upbringing, morality, and marriage.",
+    "imageUrl": "https://i.ibb.co.com/7NBwjsQ1/author12.jpg",
+    "bookUrl": "https://i.ibb.co.com/ZphFyp5W/pride-and-prejduce.jpg"
+  },
+  {
+    "title": "Artificial Intelligence: A Modern Approach",
+    "author": "Stuart Russell, Peter Norvig",
+    "publishedYear": 2010,
+    "genre": "Programming / AI",
+    "price": 64.99,
+    "description": "One of the most comprehensive texts on artificial intelligence.",
+    "imageUrl": "https://i.ibb.co.com/j9nfFPXg/author-13.jpg",
+    "bookUrl": "https://i.ibb.co.com/GQJn5zby/artificial-intiligence.jpg"
+  },
+  {
+    "title": "River Out of Eden",
+    "author": "Richard Dawkins",
+    "publishedYear": 1995,
+    "genre": "Science / Evolution",
+    "price": 18.50,
+    "description": "Exploring evolution and the river of genes shaping life.",
+    "imageUrl": "https://i.ibb.co.com/35WC0jyw/author-14.jpg",
+    "bookUrl": "https://i.ibb.co.com/2YSynmTm/rever-out-of-eden.jpg"
+  },
+  {
+    "title": "Sealed Nectar (Ar-Raheeq Al-Makhtum)",
+    "author": "Safiur Rahman Mubarakpuri",
+    "publishedYear": 1979,
+    "genre": "Islamic",
+    "price": 16.99,
+    "description": "A detailed biography of Prophet Muhammad (PBUH).",
+    "imageUrl": "https://i.ibb.co.com/5WLHyxMp/author-15.jpg",
+    "bookUrl": "https://i.ibb.co.com/tw8kRcP7/the-selected-nectar.jpg"
+  },
+  {
+    "title": "The Old Man and the Sea",
+    "author": "Ernest Hemingway",
+    "publishedYear": 1952,
+    "genre": "Novel",
+    "price": 13.99,
+    "description": "A story about an old fisherman and his struggle with a giant marlin.",
+    "imageUrl": "https://i.ibb.co.com/tPDkkWNm/author-16.jpgg",
+    "bookUrl": "https://i.ibb.co.com/G4RqXbs0/the-oldman-and-sea.jpg"
+  },
+  {
+    "title": "Operating System Concepts",
+    "author": "Abraham Silberschatz",
+    "publishedYear": 2018,
+    "genre": "Programming",
+    "price": 55.00,
+    "description": "Covers operating system principles with practical examples.",
+    "imageUrl": "https://i.ibb.co.com/nsK22M2C/author-17.jpg",
+    "bookUrl": "https://i.ibb.co.com/RGJm8hQk/Operating-system-concepts.jpg"
+  },
+  {
+    "title": "Black Holes & Baby Universes",
+    "author": "Stephen Hawking",
+    "publishedYear": 1993,
+    "genre": "Science / Space",
+    "price": 19.99,
+    "description": "A collection of essays exploring the universe and black holes.",
+    "imageUrl": "https://i.ibb.co.com/4gTB2nGv/author-18.jpg",
+    "bookUrl": "https://i.ibb.co.com/TxMH9cNB/black-holes.jpg"
+  },
+  {
+    "title": "The Forty Rules of Love",
+    "author": "Elif Shafak",
+    "publishedYear": 2009,
+    "genre": "Novel / Sufi",
+    "price": 17.99,
+    "description": "A story blending modern and historical narrative about love and spirituality.",
+    "imageUrl": "https://i.ibb.co.com/Ng6xvz3q/author-19.jpg",
+    "bookUrl": "https://i.ibb.co.com/TMxxMs1Q/the-fouty-rules.jpg"
+  },
+  {
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "publishedYear": 2016,
+    "genre": "Productivity",
+    "price": 22.99,
+    "description": "Rules for focused success in a distracted world.",
+    "imageUrl": "https://i.ibb.co.com/B5djN8HY/author-20.jpg",
+    "bookUrl": "https://i.ibb.co.com/BH7b0Rgm/deep-work.jpg"
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "publishedYear": 2011,
+    "genre": "History",
+    "price": 26.99,
+    "description": "A groundbreaking narrative of humanity's creation and evolution.",
+    "imageUrl": "https://i.ibb.co.com/gLLYdJ6V/author-21.jpg",
+    "bookUrl": "https://i.ibb.co.com/gZjRhjhv/spaniens.jpg"
+  },
+  {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "publishedYear": 2018,
+    "genre": "Memoir",
+    "price": 18.99,
+    "description": "A memoir about a woman who grows up in a strict family but pursues education.",
+    "imageUrl": "https://i.ibb.co.com/VW1dfXLm/author-22.jpg",
+    "bookUrl": "https://i.ibb.co.com/d0GcdXxH/educated.jpg"
+  },
+  {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "publishedYear": 2011,
+    "genre": "Psychology",
+    "price": 23.99,
+    "description": "Insights into human thinking and decision-making processes.",
+    "imageUrl": "https://i.ibb.co.com/Hf8WCskJ/author-23.jpg",
+    "bookUrl": "https://i.ibb.co.com/qLz1S8wy/thinking-fast-slow.jpg"
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author": "J.K. Rowling",
+    "publishedYear": 1998,
+    "genre": "Fantasy",
+    "price": 15.99,
+    "description": "The second book in the Harry Potter series, full of magic and adventure.",
+    "imageUrl": "https://i.ibb.co.com/r2HtW4w4/author-24.png",
+    "bookUrl": "https://i.ibb.co.com/FqmzNS1s/harry-potter.jpg"
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
