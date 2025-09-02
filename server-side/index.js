@@ -11,7 +11,7 @@ app.use(cors())
 
 //connect mongodb
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = process.env.MONGODB_URL
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -94,6 +94,35 @@ async function run() {
    })
 
 
+   app.get("/books/:id", async(req,res)=> {
+    const bookId = req.params.id
+
+    try {
+      const book = await booksCollection.findOne({_id: new ObjectId(bookId)});
+      if(!book) return res.status(404).json({message: "book not found!"})
+        res.json(book)
+    } catch (error) {
+      res.status(500).json({error: error.message})
+    }
+   })
+
+   app.put("/books/:id", async(req,res)=> {
+    try {
+      const updateBook = await booksCollection.updateOne({_id: new ObjectId(req.params.id)},{$set: req.body})
+      res.json(updateBook)
+    } catch (error) {
+      res.status(500).json({error: error.message})
+    }
+   })
+
+   app.delete("/books/:id", async(req,res)=> {
+    try {
+      await booksCollection.deleteOne({_id: new ObjectId(req.params.id)})
+      res.json({message: "Book Deleted"})
+    } catch (error) {
+      res.status(500).json({error: error.message})
+    }
+   })
 
 
     // Send a ping to confirm a successful connection
