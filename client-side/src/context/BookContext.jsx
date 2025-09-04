@@ -1,4 +1,4 @@
-import {  useContext, useEffect, useState } from "react";
+import {  useCallback, useContext, useEffect, useState } from "react";
 import { createContext } from "react";
 import axios from "axios"
 
@@ -10,7 +10,7 @@ export const BookProvider = ({children}) => {
     const [loading,setLoading] = useState(false)
     const [error,setError] = useState(null)
 
-    const [] = useState({
+    const [filters,setFilters] = useState({
         page:1,
         limit: 8,
         genre: '',
@@ -30,29 +30,59 @@ export const BookProvider = ({children}) => {
         totalPages: 3
      })
 
-    const fetchBooks = async () => {
+    const fetchBooks = useCallback(async () => {
         try{
            setLoading(true)
            setError(null)
-           const response = await axios.get('http://localhost:5000/books')
+           const params = new URLSearchParams()
+           Object.entries(filters).forEach(([key, value ]) => {
+            if(value !== ''){
+                params.append(key,value)
+            }
+           })
+           const response = await axios.get(`http://localhost:5000/books? ${params}`)
            setBooks(response.data.books || [])
+           setPagination({
+            currentPage: response.data.currentPage,
+            totalBooks: response.data.totalBooks,
+            totalPages:response.data.totalBooks
+           })
            //console.log(response);
            
         } catch(error) {
-            console.log(error);
+            setError(error.messsage)
+            //console.log(error);
             
         }
-    }
+        finally {
+            setLoading(false)
+        }
+    },[filters])
+
+    const clearCurrentBook = useCallback(()=> {
+        setBooks(null)
+    },[])
+
+    const updateFilters = useCallback(async(newFilters)=> {
+     setFilters(prev =>({
+        ...prev,
+         ...newFilters,
+         page: newFilters.
+     }))
+    },[])
 
     useEffect(()=>{
         fetchBooks()
-    },[])
+    },[filters])
 
     const value = {
         books,
         currentBook,
         loading,
-        error
+        error,filters,
+        pagination,
+        fetchBooks,
+        clearCurrentBook
     }
     return (
         <BookContext.Provider value={value}>
