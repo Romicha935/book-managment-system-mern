@@ -82,7 +82,7 @@ async function run() {
         }
       }
 
-      const sortOptions = {[sortBy || 'title']: order === 'doc'? -1 : 1}
+      const sortOptions = {[sortBy || 'title']: order === 'desc'? -1 : 1}
        const [books,totalBooks] = await Promise.all([booksCollection.find(filter).sort(sortOptions).skip(skip).limit(perPage).toArray(), booksCollection.countDocuments(filter)])
 
 
