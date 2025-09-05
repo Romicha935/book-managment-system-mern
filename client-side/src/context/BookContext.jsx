@@ -24,6 +24,8 @@ export const BookProvider = ({children}) => {
         search:'',
     })
 
+    const categories = ["All Books", "Science","Productivity", "Programming",  "Memoir"]
+
      const [pagination,setPagination] = useState({
         totalBooks: 26,
         currentPage: 1,
@@ -91,13 +93,15 @@ export const BookProvider = ({children}) => {
 
     useEffect(()=>{
         fetchBooks()
-    },[filters])
+    },[filters,fetchBooks])
+
 
     const value = {
         books,
         currentBook,
         loading,
         error,
+        categories,
         filters,
         pagination,
         fetchBooks,
