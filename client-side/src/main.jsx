@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { BrowserRouter, Routes, Route, createBrowserRouter } from "react-router";
 import Home from './pages/home/Home.jsx';
 import { RouterProvider } from 'react-router-dom';
+import Shop from './pages/shop/Shop.jsx';
 
 
 const routes = createBrowserRouter([
@@ -15,7 +16,11 @@ const routes = createBrowserRouter([
       {
         path:'/',
         element:<Home/>
-      }
+      },
+      {
+        path:'/books',
+        element:<Shop/>
+      },
     ]
   }
 ])

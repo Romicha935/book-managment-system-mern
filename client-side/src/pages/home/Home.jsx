@@ -1,9 +1,10 @@
 import  { useEffect, useState } from 'react'
 import { useBooks } from '../../context/BookContext';
 import Hero from '../../components/Hero';
+import Shop from '../shop/Shop';
 
 const Home = () => {
-  const {books,currentBook,oading,error} = useBooks()
+       
     //const [books,setBooks] = useState([])
 
     // useEffect(()=>{
@@ -14,7 +15,7 @@ const Home = () => {
         
     // },[])
 
-    console.log(books);
+    // console.log(books);
     
   return (
      <div>
@@ -24,6 +25,17 @@ const Home = () => {
         </div>
       ))} */}
       <Hero></Hero>
+      <Shop/>
+     {/* <div className='container mx-auto'>
+      {books.length ? <div>
+        {books.map(book => (
+          <div key={book._id}>
+            {book.title}
+          </div>
+        ))}
+      </div> : "no books found"}
+     </div> */}
+
     </div>
   )
 }
