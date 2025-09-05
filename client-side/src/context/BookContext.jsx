@@ -63,13 +63,31 @@ export const BookProvider = ({children}) => {
         setBooks(null)
     },[])
 
+
     const updateFilters = useCallback(async(newFilters)=> {
      setFilters(prev =>({
         ...prev,
          ...newFilters,
-         page: newFilters.
+         page: newFilters.hasWonProperty('page') ? newFilters.page: 1
      }))
     },[])
+
+    const fetchBookDetails = useCallback(async(bookId)=>{
+      try {
+        setLoading(true);
+        setError(null)
+        const response = await axios.get(`http://localhost:5000/books/${bookId}`)
+        setCurrentBook(response.data)
+        return response.data
+      } catch(error) {
+          setError(error.messsage)
+          throw error
+      } finally {
+        setLoading(false)
+      }
+    },[])
+
+                
 
     useEffect(()=>{
         fetchBooks()
@@ -79,10 +97,13 @@ export const BookProvider = ({children}) => {
         books,
         currentBook,
         loading,
-        error,filters,
+        error,
+        filters,
         pagination,
         fetchBooks,
-        clearCurrentBook
+        clearCurrentBook,
+        updateFilters,
+        fetchBookDetails,
     }
     return (
         <BookContext.Provider value={value}>

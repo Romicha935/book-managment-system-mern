@@ -1,5 +1,6 @@
 import  { useEffect, useState } from 'react'
 import { useBooks } from '../../context/BookContext';
+import Hero from '../../components/Hero';
 
 const Home = () => {
   const {books,currentBook,oading,error} = useBooks()
@@ -22,7 +23,7 @@ const Home = () => {
           {book.title}
         </div>
       ))} */}
-      home
+      <Hero></Hero>
     </div>
   )
 }
