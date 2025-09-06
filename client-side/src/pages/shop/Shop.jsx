@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useBooks } from '../../context/BookContext'
 import BookGrid from './BookGrid'
 import CategoryNav from './CategoryNav'
+import SortBooks from './SortBooks'
 
 const Shop = () => {
      const {  books,currentBook,loading,error,filters,pagination,fetchBooks,  categories,
@@ -21,6 +22,14 @@ const Shop = () => {
         })
     }
 
+    const handleSortChange = (sortConfig) => {
+      updateFilters({
+         sortBy:sortConfig.sortBy,
+        order: sortConfig.order,
+        page:1,
+      })
+    }
+
         const handleDeleteBook = () => {
             console.log("book deleted");
             
@@ -29,7 +38,13 @@ const Shop = () => {
     <div className='container mx-auto px-4 py-12 min-h-screen'>
         <div className='flex justify-between items-center flex-wrap border-b border-gray-200 pb-4'>
          <CategoryNav categories={categories} activeCategory={filters.genre ||"All Books" } onCategoryChange={handleCategoryChange} />
-         <div>Sorting</div>
+        <div className='py-4 flex justify-end px-4'>
+             <SortBooks currentSort={{
+                sortBy:filters.sortBy,
+                order:filters.order
+             }} onSortChange={handleSortChange} />
+        </div>
+
         </div>
         {/* reult summary */}
         <div className='py-4 text-gray-600 px-4  '>

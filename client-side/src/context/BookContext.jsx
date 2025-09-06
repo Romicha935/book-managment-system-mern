@@ -24,7 +24,7 @@ export const BookProvider = ({children}) => {
         search:'',
     })
 
-    const categories = ["All Books", "Science","Productivity", "Programming",  "Memoir"]
+    const categories = ["All Books", "Science","Programming", "Programming / AI", "Productivity",   "Memoir"]
 
      const [pagination,setPagination] = useState({
         totalBooks: 26,
