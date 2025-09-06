@@ -29,7 +29,7 @@ export const BookProvider = ({children}) => {
      const [pagination,setPagination] = useState({
         totalBooks: 26,
         currentPage: 1,
-        totalPages: 3
+        totalPages: 1
      })
 
     const fetchBooks = useCallback(async () => {
@@ -47,7 +47,7 @@ export const BookProvider = ({children}) => {
            setPagination({
             currentPage: response.data.currentPage,
             totalBooks: response.data.totalBooks,
-            totalPages:response.data.totalBooks
+            totalPages:response.data.totalPages
            })
            //console.log(response);
            

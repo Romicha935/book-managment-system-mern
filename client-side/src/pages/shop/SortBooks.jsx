@@ -1,5 +1,5 @@
 import React from 'react'
-import { useBooks } from '../../context/BookContext'
+
 
 const SortBooks = ({currentSort,onSortChange}) => {
     //const {filters, updateFilters,fetchBooks,} = useBooks()
@@ -12,7 +12,7 @@ const SortBooks = ({currentSort,onSortChange}) => {
     ]
   return (
 <div>
-    <label htmlFor="">Sort By:</label>
+    <label htmlFor="">Sort By: </label>
     <select name="" id="sort" value={`${currentSort.sortBy}-${currentSort.order}`} onChange={(e)=>{
         const [sortBy,order] = e.target.value.split('-');
         onSortChange({sortBy,order})

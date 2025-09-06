@@ -15,7 +15,8 @@ const BookCard = ({book,onDelete}) => {
             <h2 className='text-lg font-medium text-gray-900'>{book.title}</h2>
             <p className='text-sm text-gray-500'>{book.author}</p>
             <div className='flex items-center justify-between'>
-
+             <p>${book.price}</p>
+             <button className='text-gray-500 cursor-pointer'>Edit</button>
             </div>
         </div>
     </div>
