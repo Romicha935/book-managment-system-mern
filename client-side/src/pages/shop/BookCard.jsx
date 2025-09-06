@@ -16,7 +16,11 @@ const BookCard = ({book,onDelete}) => {
             <p className='text-sm text-gray-500'>{book.author}</p>
             <div className='flex items-center justify-between'>
              <p>${book.price}</p>
-             <button className='text-gray-500 cursor-pointer'>Edit</button>
+             <div className='flex space-x-2'>
+              <Link className='text-gray-400 hover:text-gray-600' to={`/books/edit/${book._id}`}>Edit</Link>
+              <button onClick={()=> onDelete(book._id)} className='text-gray-400 hover:text-red-500 cursor-pointer'>Delete</button>
+             </div>
+             
             </div>
         </div>
     </div>

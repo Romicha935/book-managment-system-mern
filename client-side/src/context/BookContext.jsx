@@ -42,7 +42,7 @@ export const BookProvider = ({children}) => {
                 params.append(key,value)
             }
            })
-           const response = await axios.get(`http://localhost:5000/books? ${params}`)
+           const response = await axios.get(`http://localhost:5000/books?${params}`)
            setBooks(response.data.books || [])
            setPagination({
             currentPage: response.data.currentPage,
@@ -93,7 +93,7 @@ export const BookProvider = ({children}) => {
 
     useEffect(()=>{
         fetchBooks()
-    },[filters,fetchBooks])
+    },[filters])
 
 
     const value = {
