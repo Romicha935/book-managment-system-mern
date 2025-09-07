@@ -8,6 +8,7 @@ import { RouterProvider } from 'react-router-dom';
 import Shop from './pages/shop/Shop.jsx';
 import EditBook from './pages/editBook/EditBook.jsx';
 import BookDetails from './pages/bookDetails/BookDetails.jsx';
+import AddBook from './pages/addBook/AddBook.jsx';
 
 
 const routes = createBrowserRouter([
@@ -30,6 +31,10 @@ const routes = createBrowserRouter([
       {
         path:'/books/:id',
         element:<BookDetails/>
+      },
+      {
+        path:'/books/add',
+        element:<AddBook/>
       },
     ]
   }

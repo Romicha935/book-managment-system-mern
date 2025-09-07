@@ -1,88 +1,61 @@
-import React, { useEffect } from 'react'
-import { useParams } from 'react-router'
-import { useBooks } from '../../context/BookContext';
-import { useForm } from "react-hook-form"
-import axios from 'axios';
+import axios from 'axios'
+import React from 'react'
+import { useForm } from 'react-hook-form'
 
-const EditBook = () => {
-    const {id} = useParams()
-    console.log(id);
-
+const AddBook = () => {
       const {
-    register,
-    handleSubmit,
-  setValue
-  } = useForm()
-
-    const { currentBook,fetchBookDetails, } = useBooks();
-
-    useEffect(()=> {
-        fetchBookDetails(id)
-    },[id,fetchBookDetails])
-
-    useEffect(()=>{
-        if(currentBook){
-            setValue('title', currentBook.title)
-            setValue('author', currentBook.author)
-            setValue('publishedYear', currentBook.publishedYear)
-            setValue('genre', currentBook.genre)
-            setValue('price', currentBook.price)
-            setValue('description', currentBook.description)
-            setValue('imageUrl', currentBook.imageUrl)
-        }
-    },[currentBook,setValue])
-    
-     const onSubmit = async (data) => {
-    const price = parseFloat(data.price)
-    data.price = price;
-
-    try{
-   const response =  axios.put(`http://localhost:5000/books/${id}`,data)
-   if((await response).data.acknowledge) {
-    alert("Book added successfully")
-   }
-   console.log(response);
+        register,
+        handleSubmit,
    
-    } catch (error) {
-        console.error("Error updating book data",error.message);
-        alert('error updating boook data')
-    }
+      } = useForm()
+ const onSubmit = async (data) => {
+     console.log(data);
+   try {
+      const response = await axios.post(`http://localhost:5000/books/`, data)
+     console.log(response.data);
+     alert('Book added sucessfully')
+   } catch (error) {
+    alert("Error create new book", error)
+   }
+     
+     
      } 
+
   return (
     <div className='container mx-auto px-4 py-12'>
-        <h1 className='text-3xl'>Edit Book</h1>
+        <h1 className='text-3xl'>Add New Book</h1>
         <form action="" onSubmit={handleSubmit(onSubmit)} className='space-y-4'>
              <div>
                 <label >Title</label>
                 <input type="text" {...register("title")}
-                
+                placeholder='Book Title'
                 className='mt-1 p-2 block w-full bg-gray-50 rounded-md shadow-md' />
              </div>
              <div>
                 <label >Author</label>
                 <input type="text" {...register("author")}
-                
+                 placeholder='author'
                 className='mt-1 p-2 block w-full bg-gray-50 rounded-md shadow-md' />
              </div>
              <div>
                 <label >Published Year</label>
                 <input type="text" {...register("publishedYear")}
-          
+           placeholder='published year'
                 className='mt-1 p-2 block w-full bg-gray-50 rounded-md shadow-md' />
              </div>
              <div>
                 <label >Genre</label>
                 <input type="text" {...register("genre")}
-               
+                placeholder='genre'
                 className='mt-1 p-2 block w-full bg-gray-50 rounded-md shadow-md' />
              </div>
              <div>
                 <label >Price</label>
                 <input type="text" {...register("price")}
-             
+              placeholder='price'
                 className='mt-1 p-2 block w-full bg-gray-50 rounded-md shadow-md' />
              </div>
-             <div>
+              <div>
           <label>Description</label>
           <textarea
             {...register("description")}
@@ -93,7 +66,7 @@ const EditBook = () => {
         </div>
              <div>
                 <label >ImageUrl</label>
-               <input
+                <input
             type="text"
             {...register("bookUrl", { required: true })}
             placeholder='Image URL'
@@ -101,10 +74,10 @@ const EditBook = () => {
           />
              </div>
 
-             <button type='submit' className='bg-amber-500 py-2 px-4 hover:bg-amber-400 cursor-pointer'>Save Change</button>
+             <button type='submit' className='bg-amber-500 py-2 px-4 hover:bg-amber-400 cursor-pointer'>Upload</button>
         </form>
     </div>
   )
 }
 
-export default EditBook
+export default AddBook
