@@ -22,7 +22,7 @@ const Navbar = () => {
             to='/' 
             className="text-xl font-bold uppercase tracking-wider"
           >
-            Book <span className='text-amber-500'>Club</span>
+            Book <span className='text-green-500'>Club</span>
           </NavLink>
 
           {/* navigation */}
@@ -33,8 +33,8 @@ const Navbar = () => {
                 to={to} 
                 className={({ isActive }) =>
                   isActive 
-                    ? "text-amber-500 font-semibold" 
-                    : "text-gray-700 hover:text-amber-500"
+                    ? "text-green-500 font-semibold" 
+                    : "text-gray-700 hover:text-green-500"
                 }
               >
                 {label}
@@ -43,7 +43,7 @@ const Navbar = () => {
           </div>
           {/* right side item */}
           <div className='flex items-center space-x-4'>
-            <NavLink to='/cart' className="text-gray-700 hover:text-amber-500 text-2xl">
+            <NavLink to='/cart' className="text-gray-700 hover:text-green-500 text-2xl">
             <FaShoppingCart/>
             </NavLink>
           </div>

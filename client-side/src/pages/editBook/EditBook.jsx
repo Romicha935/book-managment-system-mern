@@ -101,7 +101,7 @@ const EditBook = () => {
           />
              </div>
 
-             <button type='submit' className='bg-amber-500 py-2 px-4 hover:bg-amber-400 cursor-pointer'>Save Change</button>
+             <button type='submit' className='bg-green-500 py-2 px-4 hover:bg-green-400 cursor-pointer'>Save Change</button>
         </form>
     </div>
   )

@@ -23,7 +23,7 @@ const Pagination = ({ totalPages,currentPage,onPageChange}) => {
         </button>
        {
         getPageNumbers().map((page,index)=> (
-            <button key={index} onClick={()=> onPageChange(page)} className={`px-4 py-2 rounded-lg cursor-pointer border ${currentPage === page? 'bg-amber-500 text-white border-amber-500' : 'border-gray-300 text-gray-700  hover:bg-gray-50'} `}>{page}</button>
+            <button key={index} onClick={()=> onPageChange(page)} className={`px-4 py-2 rounded-lg cursor-pointer border ${currentPage === page? 'bg-green-500 text-white border-green-500' : 'border-gray-300 text-gray-700  hover:bg-gray-50'} `}>{page}</button>
         ))
        }
         <button onClick={()=> onPageChange(currentPage + 1)}

@@ -74,7 +74,7 @@ const AddBook = () => {
           />
              </div>
 
-             <button type='submit' className='bg-amber-500 py-2 px-4 hover:bg-amber-400 cursor-pointer'>Upload</button>
+             <button type='submit' className='bg-green-500 py-2 px-4 hover:bg-green-400 cursor-pointer'>Upload</button>
         </form>
     </div>
   )

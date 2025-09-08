@@ -8,10 +8,8 @@ import axios from 'axios'
 import { baseUrl } from '../../utils/baseUrl'
 
 const Shop = () => {
-     const {  books,currentBook,loading,error,filters,pagination,fetchBooks,  categories,
-        clearCurrentBook,
-        updateFilters,
-        fetchBookDetails} = useBooks()
+     const {  books,loading,error,filters,pagination,fetchBooks,  categories,
+    updateFilters,} = useBooks()
 
         useEffect(()=>{
             fetchBooks()

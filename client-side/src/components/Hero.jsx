@@ -32,7 +32,7 @@ const Hero = () => {
              className='bg-white px-4 py-2 border text-black w-full' />
             <button 
             type='submit'
-             className='bg-amber-300 px-6 sm:pl-10 py-2 text-black'>Search</button>
+             className='bg-green-300 cursor-pointer px-6 sm:pl-10 py-2 text-black'>Search</button>
         </form>
         </div>
         <div className='w-full lg:w-1/2'>

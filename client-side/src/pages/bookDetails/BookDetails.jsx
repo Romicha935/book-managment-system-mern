@@ -21,7 +21,7 @@ const BookDetails = () => {
   }
   return (
     <div className='container mx-auto px-4 py-8'>
-      <Link to='/books' className='inline-flex items-center text-gray-600 hover:text-amber-500 py-3'>
+      <Link to='/books' className='inline-flex items-center text-gray-600 hover:text-green-500 py-3'>
        <FaArrowLeft className='mr-2'/>
        Back to Books
       </Link>
@@ -42,7 +42,7 @@ const BookDetails = () => {
            </div>
           {/* price and genre */}
            <div className=''>
-            <p className='text-2xl font-bold text-amber-500 mb-2'>${currentBook.price}</p>
+            <p className='text-2xl font-bold text-green-500 mb-2'>${currentBook.price}</p>
             <p className='text-xl text-gray-600 '><span className='text-gray-900'>{currentBook.genre}</span> </p>
             {currentBook.publishedYear && (
               <p className='text-gray-600'>Published : <span className='text-gray-900'>{currentBook.publishedYear}</span></p>
@@ -56,7 +56,7 @@ const BookDetails = () => {
 
 {/* action buttons */}
             <div className='flex space-x-4 pt-6'>
-              <button className='bg-amber-500 text-white px-6 py-3 rounded-lg font-semibold hover:text-amber-600 transition-colors cursor-pointer  flex items-center justify-center'>
+              <button className='bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:text-amber-600 transition-colors cursor-pointer  flex items-center justify-center'>
                 <FaShoppingCart className='mr-2'/>
                 Add to Cart</button>
                 <Link className='px-6 py-2 border  rounded-lg text-gray-400 hover:bg-gray-50 transition-colors' to={`/books/edit/${currentBook._id}`}>Edit</Link>
