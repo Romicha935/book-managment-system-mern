@@ -9,6 +9,8 @@ import Shop from './pages/shop/Shop.jsx';
 import EditBook from './pages/editBook/EditBook.jsx';
 import BookDetails from './pages/bookDetails/BookDetails.jsx';
 import AddBook from './pages/addBook/AddBook.jsx';
+import Membership from './pages/membarship/Membarship.jsx';
+import Ebooks from './pages/eBooks/EBooks.js';
 
 
 const routes = createBrowserRouter([
@@ -35,6 +37,14 @@ const routes = createBrowserRouter([
       {
         path:'/books/add',
         element:<AddBook/>
+      },
+      {
+        path:'/membership',
+        element:<Membership/>
+      },
+      {
+        path:'/ebooks',
+        element:<Ebooks/>
       },
     ]
   }
