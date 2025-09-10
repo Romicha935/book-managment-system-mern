@@ -21,7 +21,7 @@ const Navbar = () => {
           to="/"
           className="text-xl font-bold uppercase tracking-wider"
         >
-          Book <span className="text-green-500">Club</span>
+          Book <span className="text-green-500">Hub</span>
         </NavLink>
 
         {/* Desktop menu */}
