@@ -1,5 +1,5 @@
-import  { useEffect, useState } from 'react'
-import { useBooks } from '../../context/BookContext';
+// import  { useEffect, useState } from 'react'
+// import { useBooks } from '../../context/BookContext';
 import Hero from '../../components/Hero';
 import Shop from '../shop/Shop';
 
