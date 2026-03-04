@@ -37,7 +37,7 @@ const EditBook = () => {
     data.price = price;
 
     try{
-   const response =  axios.put(`http://localhost:5000/books/${id}`,data)
+   const response =  axios.put(`https://book-managment-system-mern.onrender.com/books/${id}`,data)
    if((await response).data.acknowledge) {
     alert("Book added successfully")
    }
