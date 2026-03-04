@@ -5,7 +5,7 @@ import CategoryNav from './CategoryNav'
 import SortBooks from './SortBooks'
 import Pagination from './Pagination'
 import axios from 'axios'
-import { baseUrl } from '../../utils/baseUrl'
+
 
 const Shop = () => {
      const {  books,loading,error,filters,pagination,fetchBooks,  categories,
@@ -34,7 +34,7 @@ const Shop = () => {
         const handleDeleteBook = async (id) => {
            try {
              console.log("book deleted",id);
-           await axios.delete(`http://localhost:5000/books/${id}`)
+           await axios.delete(`https://book-managment-system-mern.onrender.com/books/${id}`)
            alert("Boook deleted succesfully")
            fetchBooks()
            } catch (error) {

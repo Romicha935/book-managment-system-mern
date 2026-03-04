@@ -11,7 +11,7 @@ const AddBook = () => {
  const onSubmit = async (data) => {
      console.log(data);
    try {
-      const response = await axios.post(`http://localhost:5000/books/`, data)
+      const response = await axios.post(`https://book-managment-system-mern.onrender.com/books/`, data)
      console.log(response.data);
      alert('Book added sucessfully')
    } catch (error) {
